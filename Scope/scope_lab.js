@@ -24,6 +24,30 @@ function show(){
 }
 show();
     
-console.log(functionVar); // Throws ReferenceError
-console.log(functionLet); // Throws ReferenceError
-console.log(functionConst); // Throws ReferenceError
+// console.log(functionVar); // Throws ReferenceError
+// console.log(functionLet); // Throws ReferenceError
+// console.log(functionConst); // Throws ReferenceError
+
+{
+    let letNewBlock = "test1";
+    const constNewBlock = "test1";
+    var varNewBlock = "test1";
+
+    letNewBlock = "test2";
+    // constNewBlock = "test2";
+    varNewBlock = "test2";
+
+    console.log(letNewBlock);
+    console.log(constNewBlock);
+    console.log(varNewBlock);
+}
+
+{
+    letNewBlock = "test3";
+    // constNewBlock = "test3";
+    varNewBlock = "test3";
+
+    console.log(letNewBlock);
+    // console.log(constNewBlock);
+    console.log(varNewBlock);
+}
