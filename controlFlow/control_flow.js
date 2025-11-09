@@ -50,3 +50,20 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+let userTitle = "Employee";
+let newUserMessage
+
+if (userTitle == "Employee") {
+    newUserMessage = "You have access to Dietary Services"
+} else if (userTitle == "Enrolled Member") {
+    newUserMessage = "You have access to Dietary Services and one-on-one interaction with a dietician"
+} else if (userTitle == "Subscriber") {
+    newUserMessage = "You have partial access to facilitate Dietary Services"
+} else if (userTitle == "Non-Subscriber") {
+    newUserMessage = "You need to enroll or at least subscribe first to avail this facility"
+} else {
+    newUserMessage = "You must authenticate as a valid type of user to continue."
+}
+
+console.log("New user message:", newUserMessage)
